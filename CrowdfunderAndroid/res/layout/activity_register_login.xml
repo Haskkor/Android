@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        layout="@layout/header" />
+
+    <!-- Login -->
+    <LinearLayout style="@style/layout_vertical" >
+		
+        <TextView android:text="@string/login"  style="@style/title_textView"/>
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Login : email -->
+        <LinearLayout style="@style/layout_horizontal" >
+
+            <EditText
+                android:id="@+id/email_login"
+                style="@style/editText"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+            
+        </LinearLayout>
+        
+        <!-- Login : password -->
+        <LinearLayout style="@style/layout_horizontal" >
+
+            <EditText
+                android:id="@+id/password_login"
+                style="@style/editText"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+            
+        </LinearLayout>
+
+        <!-- Login : button -->
+        <Button
+            android:id="@+id/connect"
+            style="@style/button_text"
+            android:layout_gravity="center"
+            android:text="@string/login" />
+        
+    </LinearLayout>
+
+    <!-- Register -->
+    <LinearLayout style="@style/layout_vertical" >
+
+        <TextView android:text="@string/register" style="@style/title_textView"/>
+        <TextView
+            android:id="@+id/registerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Register : firstname -->
+        <LinearLayout style="@style/layout_horizontal" >
+
+            <EditText
+                android:id="@+id/firstname"
+                style="@style/editText"
+                android:hint="@string/firstname"
+                android:inputType="text" >
+                <requestFocus />
+            </EditText>
+            
+        </LinearLayout>
+
+        <!-- Register : lastname -->
+        <LinearLayout style="@style/layout_horizontal" >
+
+            <EditText
+                android:id="@+id/lastname"
+                style="@style/editText"
+                android:ems="10"
+                android:hint="@string/lastname"
+                android:inputType="text" />
+            
+        </LinearLayout>
+
+        <!-- Register : email -->
+        <LinearLayout style="@style/layout_horizontal" >
+
+            <EditText
+                android:id="@+id/email_register"
+                style="@style/editText"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+            
+        </LinearLayout>
+
+        <!-- Register : password -->
+        <LinearLayout style="@style/layout_horizontal" >
+
+            <EditText
+                android:id="@+id/password_register"
+                style="@style/editText"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+            
+        </LinearLayout>
+
+        <!-- Register : confirm password -->
+        <LinearLayout style="@style/layout_horizontal" >
+
+            <EditText
+                android:id="@+id/confirm_password"
+                style="@style/editText"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword" />
+            
+        </LinearLayout>
+
+        <!-- Register : button -->
+        <Button
+            android:id="@+id/register"
+            style="@style/button_text"
+            android:layout_gravity="center"
+            android:text="@string/register" />
+        
+    </LinearLayout>
+</LinearLayout>

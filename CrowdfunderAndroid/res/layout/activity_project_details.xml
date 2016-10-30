@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <!-- Project name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:id="@+id/name_project"
+           	style="@style/title_textView"/>
+    </LinearLayout>
+
+    <!-- Description -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:id="@+id/project_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_margin="5dp">
+		
+        <!-- Creator -->
+        <TextView
+            android:id="@+id/creator_project"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content" />
+        <!-- Creation Date -->
+        <TextView
+            android:id="@+id/project_creation_date"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"/>
+        <!-- Completion Date -->
+        <TextView
+            android:id="@+id/project_completion_date"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp" >
+		
+        <!-- Amount Needed -->
+        <TextView
+            android:id="@+id/project_amount_needed"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content" />
+        <!-- Donation Amount -->
+        <TextView
+            android:id="@+id/project_donation_amount"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp" >
+		
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.46" />
+		
+        <!-- Donate Button -->
+        <Button
+            android:id="@+id/donate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donate" />
+    </LinearLayout>
+
+</LinearLayout>

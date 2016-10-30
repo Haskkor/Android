@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SupCrowdfunder</string>
+    <string name="is_logged">false</string>
+    <string name="submit_index">Home</string>
+    <string name="submit_login">Login</string>
+    <string name="submit_projects">Projects</string>
+
+    <string-array name="listProject"></string-array>
+
+    <string name="action_settings">Settings</string>
+    <string name="email">Mail address</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+    <string name="register">Register</string>
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="donate">Donate</string>
+    <string name="progression">Progression</string>
+    <string name="activity_project_detail"></string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_projects_by_category">ProjectsByCategory</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+
+</resources>

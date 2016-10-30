@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/layout_horizontal"
+        android:gravity="center"
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        android:background="#6E6E6E">
+
+        <Button
+            android:id="@+id/submit_index"
+            style="@style/button_header"
+            android:text="@string/submit_index"/>
+
+        <Button
+            android:id="@+id/submit_projects"
+            style="@style/button_header"
+            android:text="@string/submit_projects" />
+
+        <Button
+            android:id="@+id/submit_login"
+            style="@style/button_header"
+            android:text="@string/submit_login" />
+        
+</LinearLayout>
